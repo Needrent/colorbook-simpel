@@ -1,0 +1,40 @@
+svg{
+    width: 95vw;
+    max-height: 80vh;
+}
+#boys rect:hover,
+#girl rect:hover,
+#boy circle:hover,
+#girl circle:hover,
+#boys polygon:hover,
+#girl polygon:hover,
+#boys path:hover,
+#girl path:hover,
+#colors circle:hover{
+/*-webkit-filter: brightness(.5);
+-ms-filter: brightness(50%);
+-o-filter: brightness(50%);
+filter: gray;*/
+stroke: pink;
+stroke-width: 2;
+}
+
+rect,circle,polygon,path{
+    transition: 0.3s;
+}
+#boys rect,
+#girl rect,
+#boy circle,
+#girl circle,
+#boys polygon,
+#girl polygon,
+#boys path,
+#girl path{
+    fill: white;
+}
+#colorPick{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: solid 5px black;
+}

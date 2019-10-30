@@ -2,8 +2,6 @@
 
 const svgLink = "colorbook_happyBakers.svg";
 
-const colorPick = document.querySelector("#colorPick");
-
 // Empty varible to store the color
 let color;
 
@@ -21,7 +19,9 @@ function selectColor() {
   document.querySelector("#colors").addEventListener("click", e => {
     const styles = getComputedStyle(e.target);
     color = styles.fill; // Change the color var and store it
-    colorPick.style.background = color;
+
+    let pencil = document.querySelector("svg g#pencil #pencil-2");
+    pencil.style.fill = color;
   });
 }
 

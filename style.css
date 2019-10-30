@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
 svg{
     width: 95vw;
-    max-height: 80vh;
+    max-height: 90vh;
 }
 #boys rect:hover,
 #girl rect:hover,
@@ -10,13 +15,14 @@ svg{
 #girl polygon:hover,
 #boys path:hover,
 #girl path:hover,
-#colors circle:hover{
-/*-webkit-filter: brightness(.5);
--ms-filter: brightness(50%);
--o-filter: brightness(50%);
-filter: gray;*/
-stroke: pink;
-stroke-width: 2;
+#colors path:hover{
+-webkit-filter: brightness(.8);
+-ms-filter: brightness(80%);
+-o-filter: brightness(80%);
+filter: lightgray;
+}
+#colors path{
+    cursor: pointer;
 }
 
 rect,circle,polygon,path{
@@ -31,10 +37,31 @@ rect,circle,polygon,path{
 #boys path,
 #girl path{
     fill: white;
+    cursor: crosshair;
 }
-#colorPick{
-    width: 50px;
-    height: 50px;
-    display: block;
-    border: solid 5px black;
+main{
+    display: flex;
+    justify-content: center;
 }
+footer{
+    width: 100vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+a{
+    margin: 0 0 0 0;
+}
+a:first-of-type::after{
+    pointer-events: none;
+    content: "|";
+    margin: 0 0.25rem 0 0.5rem;
+    color:darkslategray;
+}
+a,a:visited{
+    color: darkgray;
+}
+a:hover{
+    color:darkslategray;
+}
+

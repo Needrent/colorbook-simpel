@@ -64,4 +64,8 @@ a,a:visited{
 a:hover{
     color:darkslategray;
 }
-
+@media print{
+    #colors path{
+        display: none;
+    }
+}
